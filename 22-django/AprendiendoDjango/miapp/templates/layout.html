@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        {% block title %}
+        {% endblock %}
+        | Adolfo Betin
+    </title>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+</head>
+
+<body>
+    <!--Cabecera de la página-->
+    <header>
+        <div id="logotipo">
+            <!--Logo Django-->
+            <img src="{% static 'images/logo.png' %}" />
+            <h1>Sitio Web con Django</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="/inicio">Inicio</a>
+            </li>
+            <li>
+                <a href="{% url 'articulos' %}">Articulos</a>
+            </li>
+            <li>
+                <a href="/create-article">Crear articulo</a>
+            </li>
+            <li>
+                <a href="{% url 'create_full' %}">Crear articulo 2</a>
+            </li>
+            <li>
+                <a href="/hola-mundo">Hola Mundo</a>
+            </li>
+            <li>
+                <a href="/pagina">Pagina</a>
+            </li>
+            <li>
+                <a href="/contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+   
+    <div id="content">
+        <div class="box">
+            {% block content %}
+            <!--Código que viene de templates-->
+
+            {% endblock %}
+        </div>
+    </div>
+    <footer>
+        Master en python &copy; Adolfo Betin - {%now "d/m/Y h:i:s a"%}
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+Backend:
+- Python core 
+- Inglés para programadores
+- Bases de datos
+- CRUD de contactos (Bases de datos)
+- CRUD productos
+- Administración de servidores Linux / manejo de terminal
+- Algoritmos con C
+- Devops (Git,Github,Docker)
+- Especializarme en [Python -> Django, PHP -> Laravel]
+
+
+
+
+ Ingeniería de Datos
