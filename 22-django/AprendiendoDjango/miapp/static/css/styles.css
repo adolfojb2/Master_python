@@ -50,7 +50,7 @@ nav{
     margin: 0 auto;
     box-shadow: 0px 22px 22px gray;
     font-size: 15px;
-    margin-bottom: 50px;
+    
 }
 nav ul{
     list-style: none;
@@ -72,6 +72,34 @@ nav ul li a:hover{
     box-shadow: 0px 0px 5px #333333 inset;
     color: white;
     transition: all 200ms;
+}
+
+.barra{
+    width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+} 
+.esquina-izquierda{
+    display: block;
+    border-left: 20px solid transparent;
+    border-top: 10px solid #2B2F30;
+    float: left;
+
+}
+.esquina-derecha{
+    display: block;
+    border-right: 20px solid transparent;
+    border-top: 10px solid #2B2F30;
+    float: right;
+
+}
+.relleno-barra{
+    display: block;
+    width: 1210px;
+    background-color: #2B2F30;
+    height: 10px;
+    float: left;
+
 }
 /*Estilos contenido central*/
 #content{
