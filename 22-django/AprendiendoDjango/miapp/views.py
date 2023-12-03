@@ -33,7 +33,7 @@ def crear_articulo(request, title, content, public):
         content = content,
         public = public)
     articulo.save()
-    return HttpResponse(f"Usuario creado: <strong>{articulo.title}</strong> - {articulo.content}")
+    return HttpResponse(f"Articulo creado: <strong>{articulo.title}</strong> - {articulo.content}")
 
 def save_article(request):
     if request.method == 'POST':
@@ -45,7 +45,7 @@ def save_article(request):
             content = content,
             public = public)
         articulo.save()
-        return HttpResponse(f"Usuario creado: <strong>{articulo.title}</strong> - {articulo.content}")
+        return HttpResponse(f"Articulo creado: <strong>{articulo.title}</strong> - {articulo.content}")
     else:
         return HttpResponse("<h2>No se a podido crear el articulo.</h2>")
 
