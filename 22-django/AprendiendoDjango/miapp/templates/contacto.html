@@ -2,6 +2,35 @@
 {% block title %} Contacto {% endblock %}
 
 {% block content %}
-<h2 class="title"> Contacto</h2>
+<div>
+    <h2 class="title"> Información</h2>
+    <h3>Ubicación: Sahagún Cordoba Colombia </h3>
+    <h3>Tel: 7775687</h3>
+    <h3>Correo electrónico: nuestro@correo.com</h3>
+</div>
+<br/>
+<hr/>
+<div>
+    <h2 class="title"> Contacte con nosotros</h2>
+    <form>
+        <label for="asunto">ASUNTO</label>
+        <select name="asunto">
+            <option value="1">Atención al cliente</option>
+            <option value="0">Solicitud</option>
+        </select>
+
+        <label for="email">CORREO ELECTRÓNICO</label>
+        <input type="email"  placeholder="su@email.com" name="email"/> 
+
+        <label for="archivo">ARCHIVO ADJUNTO</label>  
+        <input type="file" name="file"/>
+
+        <label for="mensaje">MENSAJE</label>
+        <textarea name="mensaje" ></textarea>
+        
+        <input type="submit" value="Enviar"/>
+    </form>
+</div>
+
 {% endblock %}
 
